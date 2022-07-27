@@ -6,6 +6,8 @@ body {
 
 input {
     margin: 4px;
+    padding: 4px;
+    border-radius: 4px;
     text-align: center;
     width: 80%;
 }
