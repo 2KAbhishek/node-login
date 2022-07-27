@@ -20,7 +20,7 @@
 <a href="https://github.com/2KAbhishek/node-login/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/node-login?style=flat&color=e06c75&label="> </a>
 
-<h3>Short sweet headline with 🎇🎉</h3>
+<h3>Simple Login Server 🔑🚪</h3>
 
 <figure>
   <img src= "images/screenshot.png" alt="node-login Demo">
@@ -32,17 +32,17 @@
 
 ## What is this
 
-node-login is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+A login API server written in `node.js` and `mongo` It is a simple login server, which can be used to handle authentication for a web app.
 
 ## Inspiration
 
-node-login was inspired by `<reason/idea>`.
+Was exploring `ejs` and decided to build this.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
+-   You have installed the latest version of `node` and `mongo`
 
 ## Getting node-login
 
@@ -51,51 +51,55 @@ To get node-login, follow these steps:
 ```bash
 git clone https://github.com/2kabhishek/node-login
 cd node-login
-<install_command>
 ```
 
 ## Using node-login
 
-```bash
-USAGE:
-    command [FLAGS] [OPTIONS]
+### Setting Up Mongo
 
-FLAGS:
-    -h, --help              Prints help information.
+For using the app you will need a working MongoDB instance, you can use either MongoDB Atlas or a local instance.
+To set the `MONGO_URI` env var use the following command.
 
-OPTIONS:
-    -o, --option <value>    Option description.
-    Options are: a, b. [default: a]
-
-Example:
-
-
+```sh
+export MONGO_URI="mongodb+srv://username:password@db-location"
 ```
+
+### Setting Up Node
+
+You will need to have a working version of Node and npm installed on your system.
+
+After that you can run the following command to install the required packages.
+
+```sh
+npm install
+```
+
+Running The Server
+
+To run the server execute the following command
+
+```sh
+node server.js
+```
+
+### Web Application Access Instruction
+
+After running the server, open up your web browser and go to this url to access the Web App.
+
+[http://localhost:3000](http://localhost:3000)
 
 ## How it was built
 
-node-login was built using `<tech/library>`
+node-login was built using `neovim, node, mongo, express` among others.
 
 ## Challenges faced
 
-While building node-login the main challenges were `<issue/difficulty>`
+-   Setting up MongoDB locally was a bit tricky, using docker or Atlas is recommended.
 
 ## What I learned
 
-While building node-login I `<learned/accomplished>` about `<learning/accomplishment>`
-
-## What's next
-
-Planning to add `<feature/module>`.
-
-### To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-- [ ] Change me
-- [ ] Update README
-- [ ] Finish it
+-   Explored `ejs`
+-   Setup a basic session manager.
 
 Hit the ⭐ button if you found this useful.
 
