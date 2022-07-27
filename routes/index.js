@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
                 Success: 'You are regestered,You can login now.'
             });
         } else {
-            res.send({Success: 'username is already used.'});
+            res.send({Success: 'Username is already used.'});
         }
     });
 });
